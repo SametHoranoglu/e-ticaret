@@ -1,3 +1,161 @@
+<!--! header start  -->
+      <header class="custom-header">
+        <div class="header-container">
+          <div class="header-left">
+            <!-- Büyük ekranlar için video -->
+            <a href="index.html">
+              <video class="samet" autoplay muted loop>
+                <source src="img/logo.mp4" type="video/mp4" />
+              </video>
+            </a>
+            
+            <a href="index.html">
+              <video class="samet1" autoplay muted loop>
+                <source src="img/Manipüle.mp4" type="video/mp4">
+              </video>
+            </a>
+          </div>
+          <div class="hamburger" id="hamburger">
+            <i class="bi bi-list" id="btn-menu"></i>
+            <i class="bi bi-x-lg close-btn" id="btn-close"></i>
+          </div>
+          <nav class="nav" id="sidebar">
+            <ul class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">shop</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="login.html">Log in</a></li>
+              <li><a href="sign-up.html">Sign up</a></li>
+            </ul>
+          </nav>
+  
+          <!-- Arama Çubuğu -->
+          <div class="search-container">
+            <input
+                type="text"
+                id="search-input"
+                class="custom-search-input"
+                placeholder="Ne arıyorsunuz?"
+            />
+            <button type="submit" id="search-button" class="custom-search-btn">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+  
+          <!-- Menü -->
+          <nav class="header-right">
+            <ul class="custom-nav-list">
+              <li class="custom-nav-item dropdown">
+                <a href="index.html" class="custom-nav-link"
+                  >Home <i class="bi bi-chevron-down"></i
+                ></a>
+                <ul class="dropdown-menu">
+                  <!-- Kategori ve Ürünler -->
+                  <li class="has-submenu">
+                    <a href="#">Categories <i class="bi bi-chevron-right"></i></a>
+                    <ul class="submenu">
+                      <li><a href="#">Men</a></li>
+                      <li><a href="#">Women</a></li>
+                      <li><a href="#">Kids</a></li>
+                      <li><a href="#">Accessories</a></li>
+                    </ul>
+                  </li>
+  
+                  <!-- Kullanıcı İşlemleri -->
+                  <li><a href="my-account.html">My Account</a></li>
+  
+                  <!-- Özel Bölümler -->
+                  <li><a href="#">Gift Cards</a></li>
+                  <!-- Temel Sayfalar -->
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="about.html">Hakkımızda</a></li>
+                </ul>
+              </li>
+  
+              <ul class="custom-menu">
+                <li class="custom-item">
+                  <a href="shop.html"
+                    >Shop <i class="bi bi-chevron-down"></i
+                  ></a>
+                  <div class="custom-dropdown">
+                    <div class="custom-dropdown-col">
+                      <h3>Men</h3>
+                      <a href="#">Blazers</a>
+                      <a href="#">Jackets</a>
+                      <a href="#" class="custom-highlight">Collections</a>
+                      <a href="#">T-Shirts</a>
+                      <a href="#">Jeans Pants</a>
+                      <a href="#">Sports Shoes</a>
+                    </div>
+                    <div class="custom-dropdown-col">
+                      <h3>Women</h3>
+                      <a href="#">Cocktail</a>
+                      <a href="#">Sunglasses</a>
+                      <a href="#">Evenings</a>
+                      <a href="#">Footwear</a>
+                      <a href="#">Boots & Bags</a>
+                      <a href="#">Furniture</a>
+                    </div>
+                    <div class="custom-dropdown-col">
+                      <h3>Accessories</h3>
+                      <a href="#">Gadgets</a>
+                      <a href="#">Laptop</a>
+                      <a href="#">Mobile</a>
+                      <a href="#">Lifestyle</a>
+                      <a href="#">Jeans Pants</a>
+                      <a href="#">Sports Items</a>
+                    </div>
+                    <div class="custom-dropdown-col">
+                      <div class="custom-dropdown-img">
+                        <img src="img/mega-menu/men.png" alt="Men's Collection" />
+                        <span>Men's Collection</span>
+                      </div>
+                      <div class="custom-dropdown-img">
+                        <img
+                          src="img/mega-menu/women.png"
+                          alt="Women's Bag Collection"
+                        />
+                        <span>Women's Bag Collection</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <li class="custom-nav-item dropdown">
+                <a href="blog.html" class="custom-nav-link">Blog</a>
+              </li>
+              <li class="custom-nav-item">
+                <a href="contact.html" class="custom-nav-link">Contact</a>
+              </li>
+            </ul>
+            <div class="header-end">
+              <div class="header-end-links">
+                <a href="my-account.html" class="header-account">
+                  <i class="bi bi-person"></i>
+                </a>
+                <button class="toggle-button">
+                  <i class="bi bi-search"></i>
+                </button>
+                <a href="cart.html">
+                  <button class="cart-btn">
+                    <svg class="cart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M6 6h15l-1.68 8.39a2 2 0 0 1-2 1.61H8.68a2 2 0 0 1-2-1.61L5 6m5 15a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+                      />
+                    </svg>
+                    <span class="cart-count">3</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="header-buttons">
+              <a href="sign-up.html" class="custom-sign-up-btn">Sign up</a>
+              <a href="login.html" class="custom-login-btn">Log in</a>
+            </div>
+          </nav>
+        </div>
+      </header>
+    <!--! header end  -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
