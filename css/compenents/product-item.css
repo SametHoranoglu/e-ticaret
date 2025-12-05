@@ -1,1 +1,214 @@
+/* -------------------------------------- */
+/* TEMEL KART VE ÜRÜN ÖĞESİ STİLLERİ */
+/* -------------------------------------- */
+.products .product-item {
+  text-align: center;
+  background-color: #efefef;
+  display: flex; 
+  flex-direction: column; 
+  position: relative;
+  width: 100%; /* GRID hücresine sığması için */
+  box-sizing: border-box;
+}
+
+.products .product-item .product-image {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.products .product-item img {
+  width: 100%;
+  max-width: 100%; /* KRİTİK: Görselin taşmasını engeller */
+  height: auto; /* Oranları korur */
+  transition: .5s ease-in-out all;
+}
+
+/* Hover, başlık, yıldız, fiyat, discount ve links stilleri buraya devam eder */
+/* ... (diğer stilleriniz) ... */
+
+/* -------------------------------------- */
+/* YENİ EKLENTİ: YAN YANA DÜZEN (UL etiketi) */
+/* Bu kural, alt alta sıralanma sorununu çözer ve Grid'i zorlar. */
+/* -------------------------------------- */
+
+/* shop.html'deki UL etiketini hedefliyoruz */
+#product-list.product-list {
+  /* Alt alta listelenme noktalarını kaldırır */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+  /* KRİTİK KURAL: Yan yana dizme kuralı */
+  display: grid; 
+  
+  /* Otomatik sütun yerleşimi: 280px'ten küçük olmayacak şekilde esnek sütunlar oluştur */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 20px; /* Ürünler arasında boşluk */
+}
+
+/* ÇAKMAMA KONTROLÜ: Product Wrapper, Grid'i desteklemeli */
+.product-wrapper {
+  position: relative;
+  /* Yan yana dizme (Grid) kuralının uygulanabilmesi için bu kuralı ekledik. */
+  display: block; 
+}
+
+.products .product-item img {
+  width: 100%;
+  transition: .5s ease-in-out all;
+}
+
+.products .product-item .img1:hover {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+
+  .products .product-item .product-image:hover .img2{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .products .product-item .img2 {
+    display: flex;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .products .product-item .product-title {
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 15px;
+    white-space: normal; /* Metnin satırlara yayılmasına izin verir */
+    overflow: hidden; /* Gereksiz taşma kısmını engeller */
+    word-wrap: break-word; /* Kelimelerin taşmasını engeller ve satıra sığdırır */
+    line-height: 1.4; /* Satır aralığını ayarlayarak metni daha düzenli yapar */
+  }
+
+.products .product-item .product-star {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0;
+  column-gap: 2px;
+}
+
+.products .product-item .product-star i {
+  font-size: 12px;
+  color: gold;
+}
+
+.product-item .product-prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  padding-bottom: 15px;
+}
+
+.product-item .product-prices .new-price {
+  color: #ff3c20;
+  font-weight: 500;
+}
+
+.product-item .product-prices .old-price {
+  color: #7d7d7d;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.product-item .product-discount {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #ff3c20;
+  display: flex;
+  color: white;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  font-weight: 600;
+}
+
+.product-item .product-links {
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 10px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out all;
+    overflow: hidden;
+}
+
+.products .product-item:hover .product-links{
+    transform: translate(10px);
+    opacity: 1;
+    visibility: visible;
+}
+
+.product-item .product-links button,
+.product-item .product-links a {
+  background-color: black;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 4px;
+  transition: all ease 0.3s;
+}
+
+.product-item .product-links button:hover,
+.product-item .product-links a:hover{
+    opacity: 0.7;
+}
+
+.product-item .product-links i{
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    pointer-events: none;
+}
+
+.product-wrapper {
+  position: relative;
+}
+
+.product-wrapper .glide__arrow {
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+}
+
+.product-wrapper .glide__arrow--left{
+  left: -40px;
+}
+
+.product-wrapper .glide__arrow--right{
+  right: -40px;
+}
+
+
+.product-wrapper .glide__arrow i {
+font-size: 40px;
+}
+
+
+@media (max-width: 576px) {
+  .product-wrapper .glide__arrow--left{
+    left: 0;
+  }
+  
+  .product-wrapper .glide__arrow--right{
+    right: 0;
+  }
+}
 
