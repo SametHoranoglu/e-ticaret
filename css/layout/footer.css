@@ -1,0 +1,169 @@
+/* Footer Genel Stil */
+.footer {
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 60px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer a {
+    color: #bbbbbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+/* Footer Top */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-contact .download-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+.footer-contact .download-app a img {
+    transition: transform 1.8s ease;
+}
+
+
+.footer-contact .download-app a:hover {
+    transform: scale(1.1);
+
+}
+
+
+.footer-contact .download-app .app-gallery {
+    border-radius: 7px;
+
+}
+
+.subscribe-title, .contact-title {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.subscribe-desc, .contact-desc {
+    color: #bbbbbb;
+    margin-bottom: 20px;
+}
+
+.footer-subscribe-form {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-subscribe-form input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.footer-subscribe-form button {
+    background-color: #FF0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding-bottom: 8px;
+}
+
+
+.footer-subscribe-form button:hover {
+    background-color: #1e1e1e;
+}
+
+/* Footer Widgets */
+.footer-widgets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.widget h4 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #FF0000;
+    padding-bottom: 5px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list li {
+    margin-bottom: 8px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background-color: #0d0d0d;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-bottom p {
+    margin-bottom: 10px;
+    color: #888;
+}
+
+.payment-methods img {
+    max-width: 100px;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-menu li {
+    list-style: none;
+}
+
+.footer-menu a {
+    color: #bbbbbb;
+    transition: color 0.3s ease;
+}
+
+.footer-menu a:hover {
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-widgets {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
