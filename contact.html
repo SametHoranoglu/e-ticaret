@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <!--! boostrap Icons CDN  -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+      <!--! header start  -->
+      <header class="custom-header">
+        <div class="header-container">
+          <div class="header-left">
+            <!-- Büyük ekranlar için video -->
+            <a href="index.html">
+              <video class="samet" autoplay muted loop>
+                <source src="img/logo.mp4" type="video/mp4" />
+              </video>
+            </a>
+  
+            <!-- Küçük ekranlar için video (bağlantı vermemişsin, link istemiyorsan bu şekilde kalabilir) -->
+            <a href="index.html">
+              <video class="samet1" autoplay muted loop>
+                <source src="img/Manipüle.mp4" type="video/mp4">
+              </video>
+            </a>
+          </div>
+          <div class="hamburger" id="hamburger">
+            <i class="bi bi-list" id="btn-menu"></i>
+            <i class="bi bi-x-lg close-btn" id="btn-close"></i>
+          </div>
+          <nav class="nav" id="sidebar">
+            <ul class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Alışveriş</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="login.html">Log in</a></li>
+              <li><a href="sign-up.html">Sign up</a></li>
+              <li><a href="about.html">Hakkımızda</a></li>
+              <li><a href="services.html">Servisler</a></li>
+            </ul>
+          </nav>
+  
+          <!-- Arama Çubuğu -->
+          <div class="custom-search-form">
+            <input
+              type="text"
+              class="custom-search-input"
+              placeholder="Ne arıyorsunuz?"
+            />
+            <button type="submit" class="custom-search-btn">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+  
+          <!-- Menü -->
+          <nav class="header-right">
+            <ul class="custom-nav-list">
+              <li class="custom-nav-item dropdown">
+                <a href="index.html" class="custom-nav-link"
+                  >Home <i class="bi bi-chevron-down"></i
+                ></a>
+                <ul class="dropdown-menu">
+                  <!-- Kategori ve Ürünler -->
+                  <li class="has-submenu">
+                    <a href="#">Categories <i class="bi bi-chevron-right"></i></a>
+                    <ul class="submenu">
+                      <li><a href="#">Men</a></li>
+                      <li><a href="#">Women</a></li>
+                      <li><a href="#">Kids</a></li>
+                      <li><a href="#">Accessories</a></li>
+                    </ul>
+                  </li>
+  
+                  <!-- Kullanıcı İşlemleri -->
+                  <li><a href="my-account.html">My Account</a></li>
+  
+                  <!-- Özel Bölümler -->
+                  <li><a href="#">Gift Cards</a></li>
+                  <!-- Temel Sayfalar -->
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="about.html">Hakkımızda</a></li>
+                </ul>
+              </li>
+  
+              <ul class="custom-menu">
+                <li class="custom-item">
+                  <a href="shop.html"
+                    >Alışveriş <i class="bi bi-chevron-down"></i
+                  ></a>
+                  <div class="custom-dropdown">
+                    <div class="custom-dropdown-col">
+                      <h3>Men</h3>
+                      <a href="#">Blazers</a>
+                      <a href="#">Jackets</a>
+                      <a href="#" class="custom-highlight">Collections</a>
+                      <a href="#">T-Shirts</a>
+                      <a href="#">Jeans Pants</a>
+                      <a href="#">Sports Shoes</a>
+                    </div>
+                    <div class="custom-dropdown-col">
+                      <h3>Women</h3>
+                      <a href="#">Cocktail</a>
+                      <a href="#">Sunglasses</a>
+                      <a href="#">Evenings</a>
+                      <a href="#">Footwear</a>
+                      <a href="#">Boots & Bags</a>
+                      <a href="#">Furniture</a>
+                    </div>
+                    <div class="custom-dropdown-col">
+                      <h3>Accessories</h3>
+                      <a href="#">Gadgets</a>
+                      <a href="#">Laptop</a>
+                      <a href="#">Mobile</a>
+                      <a href="#">Lifestyle</a>
+                      <a href="#">Jeans Pants</a>
+                      <a href="#">Sports Items</a>
+                    </div>
+                    <div class="custom-dropdown-col">
+                      <div class="custom-dropdown-img">
+                        <img src="img/mega-menu/men.png" alt="Men's Collection" />
+                        <span>Men's Collection</span>
+                      </div>
+                      <div class="custom-dropdown-img">
+                        <img
+                          src="img/mega-menu/women.png"
+                          alt="Women's Bag Collection"
+                        />
+                        <span>Women's Bag Collection</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <li class="custom-nav-item dropdown">
+                <a href="blog.html" class="custom-nav-link">Blog</a>
+              </li>
+              <li class="custom-nav-item">
+                <a href="contact.html" class="custom-nav-link">Contact</a>
+              </li>
+            </ul>
+  
+            <div class="header-end">
+              <div class="header-end-links">
+                <a href="my-account.html" class="header-account">
+                  <i class="bi bi-person"></i>
+                </a>
+                <button class="toggle-button">
+                  <i class="bi bi-search"></i>
+                </button>
+                <a href="cart.html">
+                  <button class="cart-btn">
+                    <svg class="cart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M6 6h15l-1.68 8.39a2 2 0 0 1-2 1.61H8.68a2 2 0 0 1-2-1.61L5 6m5 15a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+                      />
+                    </svg>
+                    <span class="cart-count">3</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+  
+            <div class="header-buttons">
+              <a href="sign-up.html" class="custom-sign-up-btn">Sign up</a>
+              <a href="login.html" class="custom-login-btn">Log in</a>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!--! header end  -->
+
+    <!--! contact start  -->
+<!--         <section class="contact">
+      <div class="contact-top">
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25236.40676630067!2d39.30604543261087!3d37.75368020737436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40758047b940eb6b%3A0x94975df9d638b939!2sSiverek%2C%2063600%20Siverek%2F%C5%9Eanl%C4%B1urfa!5e0!3m2!1str!2str!4v1742072366250!5m2!1str!2str"
+            width="100%"
+            height="500"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <div class="contact-bottom">
+        <div class="container">
+          <div class="contact-titles">
+            <h4>Bizimle iletişime geçin</h4>
+            <h2>İletişime Geçin</h2>
+            <p>
+              Her türlü soru, öneri ve talepleriniz için bizimle iletişime
+              geçmekten çekinmeyin. Size en kısa sürede geri dönüş yapacağız.
+            </p>
+          </div>
+          <div class="contact-elements">
+            <form class="contact-form">
+              <div class="">
+                <label>
+                  Adınız.
+                  <span>*</span>
+                </label>
+                <input type="text" required />
+              </div>
+              <div class="">
+                <label>
+                  Mail Adresiniz.
+                  <span>*</span>
+                </label>
+                <input type="text" required />
+              </div>
+              <div class="">
+                <label>
+                  Konu.
+                  <span>*</span>
+                </label>
+                <input type="text" required />
+              </div>
+              <div class="">
+                <label>
+                  Mesajınız.
+                  <span>*</span>
+                </label>
+                <textarea required></textarea>
+              </div>
+              <button class="btn btn-sm">Gönder</button>
+            </form>
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <div class="contact-info-texts">
+                  <strong>Samet Mağaza</strong>
+                  <p class="contact-street">
+                    Clotya Mağazası Türkiye — 785 15h sokak, Ofis 478/B Green
+                    Mall Siverek, De 81566
+                  </p>
+                  <a href="tel:Phone: +90 539 779 64 00"
+                    >Tel: +90 539 779 64 00</a
+                  >
+                  <a href="mailto:Email: samethoranoglu@gmail.com"
+                    >Email: samethoranoglu@gmail.com</a
+                  >
+                  <br>
+                  <br>
+                </div>
+                <div class="contact-info-texts">
+                  <strong>Açılış Saatleri</strong>
+                  <p class="contact-date">Pazartesi - Cuma : 09:00 - 17:00</p>
+                  <p>Hafta Sonu Kapalı</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> --> 
+
+    <section class="contact-section">
+      <!-- Harita Alanı -->
+       <div class="map-area">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25236.40676630067!2d39.30604543261087!3d37.75368020737436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40758047b940eb6b%3A0x94975df9d638b939!2sSiverek%2C%2063600%20Siverek%2F%C5%9Eanl%C4%B1urfa!5e0!3m2!1str!2str!4v1742072366250!5m2!1str!2str"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+ 
+      <!-- İletişim Alanı -->
+      <div class="contact-container">
+        <div class="contact-content"> 
+          <!-- Başlık Alanı -->
+           <div class="contact-title">
+            <h2>Bize Ulaşın</h2>
+            <p>
+              Her türlü soru ve önerileriniz için bizimle iletişime geçin. Size
+              en kısa sürede geri dönüş yapacağız.
+            </p>
+          </div>
+ 
+          <!-- İletişim Formu -->
+           <form class="contact-form">
+            <div class="input-group">
+              <input type="text" placeholder="Adınız" required />
+              <input type="email" placeholder="E-Mail Adresiniz" required />
+            </div>
+            <input type="text" placeholder="Konu" required />
+            <textarea placeholder="Mesajınız" required></textarea>
+            <button type="submit" class="btn btn-sm">Gönder</button>
+          </form>
+        </div>
+ 
+        <!-- İletişim Bilgileri -->
+         <div class="contact-info">
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>785 15h Sokak, Ofis 478/B, Siverek, Türkiye</p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:+905397796400">+90 539 779 64 00</a>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:samethoranoglu@gmail.com"
+              >samethoranoglu@gmail.com</a
+            >
+          </div>
+          <div class="info-card">
+            <i class="fas fa-clock"></i>
+            <p>
+              Pazartesi - Cuma: 09:00 - 17:00 <br />
+              Hafta Sonu: Kapalı
+            </p>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Sosyal Medya & Bülten -->
+       <div class="extra-content">
+        <div class="newsletter">
+          <h3>Bültenimize Katılın</h3>
+          <form>
+            <input type="email" placeholder="E-Mail Adresiniz" required />
+            <button type="submit" class="btn btn-sm">Abone Ol</button>
+          </form>
+        </div>
+        <div class="social-media">
+          <h3>Bizi Takip Edin</h3>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/samet-horano%C4%9Flu-25b695209?originalSubdomain=tr"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div> 
+      <!-- Katkı Sağlayanlar -->
+       <div class="contributors">
+        <h3>Katkı Sağlayanlar</h3>
+        <div class="contributor-list">
+          <div class="contributor-card">
+            <img
+              src="img/contact/samet.png"
+              alt="Samet"
+              class="contributor-avatar"
+            />
+            <span class="contributor-name">Samet Horanoğlu</span>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!--! contact end  -->
+
+    <!--! policy start  -->
+    <section class="policy">
+      <div class="container">
+        <ul class="policy-list">
+          <li class="policy-item">
+            <i class="bi bi-truck"></i>
+            <div class="policy-texts">
+              <strong>Ücretsiz Teslimat</strong>
+              <span>$9.99 dan Başlayan Fiyatla</span>
+            </div>
+          </li>
+          <li class="policy-item">
+            <i class="bi bi-headset"></i>
+            <div class="policy-texts">
+              <strong>7/24 Destek</strong>
+              <span>24 Saat Çevrimiçi</span>
+            </div>
+          </li>
+          <li class="policy-item">
+            <i class="bi bi-clock-history"></i>
+            <div class="policy-texts">
+              <strong>30 Gün İçinde İade</strong>
+              <span>30 Gün İçinde İade Edebilirsiniz</span>
+            </div>
+          </li>
+          <li class="policy-item">
+            <i class="bi bi-wallet2"></i>
+            <div class="policy-texts">
+              <strong>Ödeme Yöntemi</strong>
+              <span>Güvenli Ödeme</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--! policy end  -->
+
+    <!--! footer start  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-subscribe">
+            <h3 class="subscribe-title">
+              Yeni ürünler, indirimler ve daha fazlası hakkında bilgi almak için e-postalarımızı alın.
+            </h3>
+            <p class="subscribe-desc">
+              İlk 50$ üzeri siparişinizde 10$ indirim sağlayan bir kuponu e-postayla size göndereceğiz.
+            </p>
+            <form class="footer-subscribe-form">
+              <input type="email" placeholder="E-mail Adresinizi Giriniz." required />
+              <button type="submit">Abone Ol</button>
+            </form>
+            <a href="#" class="privacy-text">
+              Abone olarak Şartlar ve Koşullarımızı ve Gizlilik Politikamızı kabul etmiş olursunuz.
+            </a>
+          </div>
+          <div class="footer-contact">
+            <h3 class="contact-title">
+              Yardıma mı ihtiyacınız var? <br />
+              (+90) 123 456 78 90
+            </h3>
+            <p class="contact-desc">08:00 - 19:00 arası hizmetinizdeyiz</p>
+            <div class="download-app">
+              <a href="#"><img src="img/footer/app-store.png" alt="App Store" /></a>
+              <a href="#"><img src="img/footer/google-play.png" alt="Google Play" /></a>
+              <a href="#"><img class="app-gallery" src="img/footer/app-gallery.png" alt="App Gallery" /></a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer-widgets">
+          <div class="widget">
+            <h4>Bilgi</h4>
+            <ul class="menu-list">
+              <li><a href="#">Hakkımızda</a></li>
+              <li><a href="#">Gizlilik Politikası</a></li>
+              <li><a href="#">İade Politikası</a></li>
+              <li><a href="#">Kargo Politikası</a></li>
+              <li><a href="#">Dropshipping</a></li>
+            </ul>
+          </div>
+          <div class="widget">
+            <h4>Hesap</h4>
+            <ul class="menu-list">
+              <li><a href="#">Pano</a></li>
+              <li><a href="#">Siparişlerim</a></li>
+              <li><a href="#">İstek Listem</a></li>
+              <li><a href="#">Hesap detayları</a></li>
+              <li><a href="#">Siparişlerimi Takip Et</a></li>
+            </ul>
+          </div>
+          <div class="widget">
+            <h4>Mağaza</h4>
+            <ul class="menu-list">
+              <li><a href="#">Ortaklık</a></li>
+              <li><a href="#">En Çok Satanlar</a></li>
+              <li><a href="#">İndirim</a></li>
+              <li><a href="#">Son Ürünler</a></li>
+              <li><a href="#">Satış Ürünleri</a></li>
+            </ul>
+          </div>
+          <div class="widget">
+            <h4>Kategoriler</h4>
+            <ul class="menu-list">
+              <li><a href="#">Kadınlar</a></li>
+              <li><a href="#">Erkekler</a></li>
+              <li><a href="#">Çantalar</a></li>
+              <li><a href="#">Dış Giyim</a></li>
+              <li><a href="#">Ayakkabılar</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          <p>© 2025 - Tüm hakları saklıdır. Samet Horanoğlu tarafından desteklenmektedir.</p>
+          <div class="payment-methods">
+            <img src="img/footer/cards.png" alt="Payment Methods" />
+          </div>
+          <ul class="footer-menu">
+            <li><a href="#">Gizlilik Politikası</a></li>
+            <li><a href="#">Şartlar ve Koşullar</a></li>
+            <li><a href="#">İade Politikası</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!--! footer end  -->
+
+          <!--! chatbot start  -->
+  <!-- Chatbot Icon -->
+  <div class="chatbot-icon" id="chatbot-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 8h4M8 14h8" />
+    </svg>
+  </div>
+
+  <!-- Chat Container -->
+  <div class="chat-container hidden" id="chat-container">
+    <!-- Header -->
+    <div class="chat-header">
+      <h1>Chatbot</h1>
+      <button id="theme-toggle">🌙</button>
+      <button id="close-chat">✖️</button>
+    </div>
+
+    <!-- Chat Window -->
+    <div class="chat-window" id="chat-window"></div>
+
+    <!-- Input Field -->
+    <div class="chat-input">
+      <input type="text" id="chat-input" placeholder="Bir şeyler yazın..." />
+      <button id="send-btn">➤</button>
+    </div>
+  </div>
+    <!--! chatbot end  -->
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+  </body>
+</html>
